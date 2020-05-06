@@ -41,3 +41,12 @@ export const fetchCountries = async () => {
     return error;
   }
 };
+
+export const fetchAllCountry = async () => {
+  try {
+    const response = await axios.get(`${url}/countries`);
+    console.log(response);
+  } catch (error) {
+    return error;
+  }
+};

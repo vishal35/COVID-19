@@ -15,7 +15,7 @@ const CountryPicker = ({ handleCountryChange }) => {
   }, [setFetchedCountries]);
 
   return (
-    <div>
+    <React.Fragment>
       <FormControl className={styles.formControl}>
         <NativeSelect
           defaultValue=""
@@ -29,7 +29,7 @@ const CountryPicker = ({ handleCountryChange }) => {
           ))}
         </NativeSelect>
       </FormControl>
-    </div>
+    </React.Fragment>
   );
 };
 
